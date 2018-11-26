@@ -46,7 +46,7 @@ and I am only {dads_age} years old.""")
 #random Salary exercise
 
 name = input("Enter your designator:")
-salary = input("Enter your worth in: $")
+salary = float(input("Enter your worth in: $"))
 print(f"{name}, your current salary is ${salary}.")
 
 import math
@@ -55,9 +55,12 @@ import random
 
 Random = (random.randint(1,100))
 
-raise_per = ((random.randint(1,100)) * salary)
+raise_per = (random.randint(1,100))
+raise_amount = (raise_per/100 * salary) + salary
 
-Print(F"Your raise is %")
+
+print(f"Your raise is {raise_per}% of ${salary}")
+print(f"Your new salary is ${int(raise_amount)}")
 
 
 

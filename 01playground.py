@@ -4,7 +4,12 @@ author: Ally
 date: 11/26/18 10:26 AM
 """
 
-print ("hello")
+import random
 
-print(help(input)
+print (random.randint(1,100))
+
+
+
+
+
 

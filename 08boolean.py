@@ -19,3 +19,5 @@ print(True and 1 == 1)
 print(False and 0 != 0)
 print(True or 1 == 1)
 
+
+$conca

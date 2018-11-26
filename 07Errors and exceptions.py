@@ -5,11 +5,12 @@ date: 11/26/18 2:03 PM
 """
 
 import random
+print(4 + spam * 3)
 
 try:
-    eval('x === x')
-except SyntaxError:
-    print("You cannot do that")
+  print(4 + spam * 3)
+except NameError as error:
+  print('You have encountered a NameError because', error)
 
 
 print(10 + (1 / 0))

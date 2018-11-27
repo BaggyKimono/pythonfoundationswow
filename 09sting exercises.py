@@ -28,3 +28,5 @@ this_thingy="this is a sentence for he splicing"
 print(this_thingy[:-2])  #start begining of string and print until last 2 letters
 print(this_thingy[-2:])  #start neg 2 (end of string) an print the rest
 
+
+

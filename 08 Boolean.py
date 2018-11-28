@@ -133,54 +133,53 @@ There are three logical operators that are used to compare values.
 These operators are and, or, and not.
 
 
-Operator	What it means	What it looks like
-and
+Operator	   What it means	             What it looks like
+  and        True if both are true               x and y
+  or         True if at least one is true        x or y
+  not        True only if false                  not x
 
-True if both are true
 
-x and y
 
-or
 
-True if at least one is true
 
-x or y
+                and example
 
-not
+# To join the local basketball team, you must be at least 4 foot tall and at least 16 years old.
+# Here are all the ways you would not be able to join the team:
 
-True only if false
+    If you were at least 4 foot tall, but not at least 16 years old
 
-not x
+    If you were less than 4 foot and at least 16 years old
 
-and example
+    If you were less than 4 foot and less than 16 years old
 
-To join the local basketball team, you must be at least 4 foot tall and at least 16 years old. Here are all the ways you would not be able to join the team:
+# The only way you would be able to join the team would be if you were both taller than 4 foot and at least 16 years old.
 
-If you were at least 4 foot tall, but not at least 16 years old
 
-If you were less than 4 foot and at least 16 years old
 
-If you were less than 4 foot and less than 16 years old
 
-The only way you would be able to join the team would be if you were both taller than 4 foot and at least 16 years old.
 
-or example
+                or example
 
-Say they were not able to find enough people who fulfilled both requirements for the basketball team, so they made it to where you just have to meet one or more of the requirements. Now to join the local basketball team, you must be at least 4 foot tall or at least 16 years old. Here are now all of the ways you can join the team:
+# Say they were not able to find enough people who fulfilled both requirements for the basketball team,
+# so they made it to where you just have to meet one or more of the requirements.
+# Now to join the local basketball team, you must be at least 4 foot tall or at least 16 years old.
+# Here are now all of the ways you can join the team:
 
-If you were at least 4 foot tall, but not at least 16 years old
+    If you were at least 4 foot tall, but not at least 16 years old
 
-If you were less than 4 foot and at least 16 years old
+    If you were less than 4 foot and at least 16 years old
 
-If you were at least 4 foot tall, and at least 16 years old
+    If you were at least 4 foot tall, and at least 16 years old
 
-The only way you would be able to not join the team if you were neither taller than 4 foot or at least 16 years old.
+# The only way you would be able to not join the team if you were neither taller than 4 foot or at least 16 years old.
 
-Example Uses of and, or and not
 
-1
-2
-3
+
+
+                Example Uses of and, or and not
+
+
 print((9 > 7) and (2 < 4))  # Both expressions are True
 print((8 == 8) or (6 != 6)) # One expression is True
 print(not(3 < = 1))          # The expression is True

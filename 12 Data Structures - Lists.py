@@ -296,39 +296,94 @@ my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha
 print(len(my_friends))
 
 
+
+
 print out the 4th friend’s name
 
 my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"]
 print(my_friends [4])
 
 
+
+
 print out the 11th friend’s name (What happens?)
 
+my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"]
+print(my_friends [11])
 
-
+#there is no 11 - Index error: index out of range
 
 once you have run this once, comment out the above line
 
 print out the last friend’s name (Use negative indexing)
 
+my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"]
+print(my_friends [-1])
+
+
+
+
 print out the 5th - 8th friend’s names
+
+my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"]
+print(my_friends [5:8])
+
+
+
 
 print out the last 5 names (Do not place a number in both start and stop)
 
+my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"]
+print(my_friends [5: ])
+
+
+
 print out the first 3 names (Do not place a number in both start and stop)
+
+my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"]
+print(my_friends [ :3])
+
+
 
 print out every other name, starting at the first name
 
+my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"]
+print(my_friends [ :3])
+
+
+
+
 print out every third name, starting at the last name going backwards to the front of the list.
+
+
+
+
 
 change the 8th friend’s name to "Elizabeth". Print out the changed list.
 
+
+
+
+
 add a new friend, Danny, to the end of the list. Print out the changed list.
+
+
+
 
 remove the 7th friend’s name (They ate the last cookie in the jar). Print out the changed list.
 
+
+
+
+
 insert a new friend, Sandy, in the 3rd spot of the list. Print out the changed list.
 
+
+
+
 print out the number of times the name Sandy appears in the list.
+
+
+
 
 sort the list to be in alphabetical order. Print out the sorted list.

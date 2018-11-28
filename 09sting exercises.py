@@ -21,7 +21,7 @@ name = input("Enter a phrase: ")
 Answer= print("Miss I am " + name + "!")
 
 string_1 = f"""Miss I am  + {name} + !"""
-print(string_1[5:10]) #print only string #5-#10
+print(string_1[5:10]) #print only string character postition #5-#10
 
 
 this_thingy="this is a sentence for he splicing"

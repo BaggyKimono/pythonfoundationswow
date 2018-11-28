@@ -33,7 +33,7 @@ sub_total = subtract_total
 print(sub_total())
 
 def subtract_total (number1,number2):
-    return number2 -number1
+    return number2 - number1
 
 subtotal = subtract_total(1000,2000)
 

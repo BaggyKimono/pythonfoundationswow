@@ -41,6 +41,13 @@ list.insert()
 list.count()
 list.sort()
 list.remove()
+
+Apply knowledge
+
+Lists exercises
+
+Magic 8-Ball
+
 """
 
 
@@ -315,6 +322,9 @@ print(my_friends [11])
 
 once you have run this once, comment out the above line
 
+
+
+
 print out the last friend’s name (Use negative indexing)
 
 my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"]
@@ -355,35 +365,93 @@ print(my_friends [ :3])
 
 print out every third name, starting at the last name going backwards to the front of the list.
 
-
+my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"]
+print(my_friends [ : :3])
 
 
 
 change the 8th friend’s name to "Elizabeth". Print out the changed list.
 
+my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"]
+my_friends[8] = "Elizabeth"
+print(my_friends)
 
 
 
 
 add a new friend, Danny, to the end of the list. Print out the changed list.
 
-
+my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"]
+my_friends.append("Danny")
+print(my_friends)
 
 
 remove the 7th friend’s name (They ate the last cookie in the jar). Print out the changed list.
 
-
+my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"]
+del my_friends[7]
+print(my_friends)
 
 
 
 insert a new friend, Sandy, in the 3rd spot of the list. Print out the changed list.
 
+my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"]
+my_friends.insert(3, "sandy")
+print(my_friends)
 
 
 
 print out the number of times the name Sandy appears in the list.
 
-
+my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"]
+print(my_friends.count("Sandy"))
 
 
 sort the list to be in alphabetical order. Print out the sorted list.
+
+my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"]
+my_friends.sort()
+print(my_friends)
+
+"""___________________________________________________________________________________________"""
+"""___________________________________________________________________________________________"""
+"""________________________Magic 8-Ball_______________________________________________________"""
+
+import.random
+
+
+Magic 8-Ball
+
+Create a function called shake_ball that has no parameters. Inside the function, ask the user to ask a question about their future.
+Have your program return a random response of either:
+Yes definitely,
+As I see it,
+yes, Ask again later,
+Cannot predict now,
+Don’t count on it,
+Very doubtful,
+and 4 other responses.
+
+Call (invoke) the function like shown below:
+
+print(shake_ball())
+
+Example Output:
+>>> Ask a question: Will I be a millionaire?
+Don't count on it
+
+
+
+
+"""_____________________I DID IT!!!!!____________________"""
+import random
+
+def shake_ball():
+    input("Ask a question:")
+    answers = ["Yes definitely", "As I see it", "yes", "Ask again later", "Cannot predict now", "Don’t count on it", "Very doubtful", "you wish", "if you must", "why are you asking me", "hatred"]
+    num = random.randrange(0,11)
+    print(answers[num])
+
+shake_ball()
+

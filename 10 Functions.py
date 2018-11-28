@@ -110,3 +110,5 @@ to it in the form of username (intended as a string), and followers (intended as
  #Within the function definition statement, username and followers are contained in the parentheses of the profile_info() function.
 # The block of the function prints out information about the user as strings, making use of the two parameters.
  #Now, we can call the function and assign parameters to it:
+
+ 

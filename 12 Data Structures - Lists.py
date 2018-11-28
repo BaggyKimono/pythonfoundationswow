@@ -25,6 +25,39 @@ Lists are great to use when you want to work with many related values.
 They allow you to keep data together that belongs together, condense your code, 
 and perform the same methods and operations on multiple values at once."""
 
+"""
+Data Structures Introduction
+1. Lists
+1.1. Length
+1.2. Indexing
+1.3. Slicing
+1.4. Modifying
+1.4.1. Adding
+1.4.2. Removing
+1.5. List Methods
+list.append()
+list.extend()
+list.insert()
+list.count()
+list.sort()
+list.remove()
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #Example: Creating a list of strings called dogs
 
 dogs = ["Collie", "Labrador", "Sheltie", "Dalmatian"]
@@ -131,7 +164,8 @@ print(first_names)
 
 """________________________________________________Removing_from_lists__________________________
 
-tems can be removed from lists by using the del statement. 
+.
+Items can be removed from lists by using the del statement. 
 This will delete the value at the index number you specify within a list."""
 
 # From the dogs list, let’s remove the item "Sheltie". This item is located at the index position of 2.
@@ -148,4 +182,84 @@ print(dogs)
 dogs = ["Collie", "Golden Retriever", "Sheltie", "Dalmatian"]
 del dogs[2: ]
 print(dogs)
+
+
+"""________________________________________________List_Methods__________________________
+
+Items can be removed from lists by using the del statement. 
+This will delete the value at the index number you specify within a list."""
+
+"""________________________list.append() and extend_____________________________________"""
+
+#The method list.append(x) will add an item (x) to the end of a list.
+
+fish = ["barracuda", "cod", "devil ray", "eel"]
+
+# This list is comprised of 4 string items, and their index numbers range from 'barracuda' at 0 to 'eel' at index 3.
+# Adding flounder to the List
+
+fish.append('flounder')
+print(fish)
+
+# Now, we have a list of 5 string items that ends with the item we passed to the .append() method.
+
+# It is also possible to add a list to the end of a list
+# Adding a list inside a List
+
+fish.append(['flounder', 'clown'])
+print(fish)
+
+#or to add multiple at one time ....
+
+fish.extend(['flounder', 'down to clown'])
+print(fish)
+
+####difference is flounder clown not in brackets with extend when adding multiple values like append
+
+
+
+"""________________________list.insert()________________________________________________"""
+
+#The list.insert(i,x) method takes two arguments, with i being the index position you would like to add an item to, and x being the item itself.
+
+# Our aquarium acquired another new fish, an anchovy.
+# You may have noticed that so far the list fish is in alphabetical order.
+# Because of this, we don’t want to just add the string 'anchovy' to the end of fish with the list.append() method.
+# Instead, we’ll use list.insert() to add 'anchovy' to the beginning of this list at index position 0:
+
+fish.insert(0, 'anchovy')
+print(fish)
+
+# In this case, we added the string item to the front of the list.
+# Each of the successive items will now be at a new index number as they have all moved down.
+# Therefore, 'barracuda' will be at index 1, 'cod' will be at index 2, and 'flounder' — the last item — will be at index 5.
+
+#If, at this point, we are bringing a damselfish to the aquarium and we wanted to
+# maintain alphabetical order based on the list above, we would put the item at index 3: fish.insert(3,'damselfish').
+
+
+"""________________________list.count()________________________________________________"""
+
+# list.count() method will return the number of times the value x occurs within a specified list.
+# This is useful for when you want to search a large list for the frequency of an item in a list.
+# Say that you have a list of employees salaries and you would like to know how many people have the same salary as you: 20000.
+# You could use could to help with this situation.
+
+salaries = [20000, 45000, 90000, 70000, 20000, 90000]
+print(salaries.count(20000))
+
+#Because the number 20000 occurs twice, the number 2 is returned.
+
+"""________________________list.sort()_________________________________________________"""
+
+# We can use the list.sort() method to sort the items in a list.
+
+# Just like list.count(), list.sort() can make it more apparent how many of a certain integer value we have,
+# and it can also put an unsorted list of numbers into numeric order.
+
+# Let’s use the integer list, fish_ages to see the .sort() method in action:
+
+fish_ages = [1,2,4,3,2,1,1,2]
+fish_ages.sort()
+print(fish_ages)
 

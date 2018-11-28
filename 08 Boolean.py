@@ -4,16 +4,6 @@ author: Ally
 date: 11/26/18 2:20 PM
 """
 
-import random
-
-print(True and True)
-print(False and True)
-print(1 == 1 and 2 == 1)
-print("test" == "test")
-print(1 == 1 or 2 != 1)
-print(True and 1 == 1)
-print(False and 0 != 0)
-print(True or 1 == 1)
 
 """
 Boolean Introduction
@@ -182,26 +172,54 @@ Operator	   What it means	             What it looks like
 
 print((9 > 7) and (2 < 4))  # Both expressions are True
 print((8 == 8) or (6 != 6)) # One expression is True
-print(not(3 < = 1))          # The expression is True
-Output:
+print(not(3 < = 1))         # The expression is True
 
-True
-True
-True
-In the first case:
+                Output:
 
-1
+                True
+                True
+                True
+
+#  In the first case:
+
 print((9 > 7) and (2 < 4))
-Both 9 > 7 and 2 < 4 needed to evaluate to True since the and operator was being used.
+
+        # Both 9 > 7 and 2 < 4 needed to evaluate to True since the and operator was being used.
 
 In the second case:
 
-1
+
 print((8 == 8) or (6 != 6))
-Since 8 == 8 evaluated to True, it did not make a difference that 6 != 6 evaluates to False because the or operator was used. If we had used the and operator, this would evaluate to False.
+
+        #  Since 8 == 8 evaluated to True, it did not make a difference that 6 != 6 evaluates to
+        #  False because the or operator was used. If we had used the and operator, this would evaluate to False.
 
 In the third case:
 
-1
+
 print(not(3 < = 1))
-The not operator negates the False value that 3 < = 1 returns.
+         #  The not operator negates the False value that 3 < = 1 returns.
+
+
+
+
+"""___________________________________________________________________________________________"""
+"""___________________________________________________________________________________________"""
+"""________________________Boolean Exercise___________________________________________________"""
+
+print(True and True)
+print(False and True)
+print(1 == 1 and 2 == 1)
+print("test" == "test")
+print(1 == 1 or 2 != 1)
+print(True and 1 == 1)
+print(False and 0 != 0)
+print(True or 1 == 1)
+print(not (True and False)
+print(not (1 == 1 and 0 != 1)
+print(not (10 == 1 or 1000 == 1000)
+print(not (1 != 1 or 3 == 4)
+print(not ("testing" == "testing" and "Ronny" == "Gool Guy")
+print(1 == 1 and not ("testing" == 1 or 1 == 0)
+print("chunky" == "bacon" and not (3 == 4 or 3 == 3)
+print(3 == 3 and not ("testing" == "testing" or "Python" == "Fun")

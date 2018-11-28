@@ -46,18 +46,6 @@ list.remove()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 #Example: Creating a list of strings called dogs
 
 dogs = ["Collie", "Labrador", "Sheltie", "Dalmatian"]
@@ -263,3 +251,84 @@ fish_ages = [1,2,4,3,2,1,1,2]
 fish_ages.sort()
 print(fish_ages)
 
+#       Output: [1, 1, 1, 2, 2, 2, 3, 4]
+
+#By using .sort() with fish_ages, the integer values are returned in order.
+# In practice, since these ages correspond to specific fish, you would likely want to make a copy of the original list prior to sorting it.
+#We can sort a list in reverse order by using the optional parameter reverse. The default value for the parameter is False.
+
+#       Sorting a list in reverse
+
+fish_ages = [1,2,4,3,2,1,1,2]
+fish_ages.sort(reverse=True)
+print(fish_ages)
+
+#       Output: [4, 3, 2, 2, 2, 1, 1, 1]
+
+
+"""________________________list.remove()_________________________________________________"""
+
+# We can use the list.remove() method to remove an item in a list.
+
+# Removing Cod From list
+
+fish = ["barracuda", "cod", "devil ray", "eel"]
+fish.remove("cod")
+print(fish)
+
+"""___________________________________________________________________________________________"""
+"""___________________________________________________________________________________________"""
+"""________________________Applying Knowledge_________________________________________________"""
+
+# Create a list of strings called my_friends. Fill this list with the following names:
+    # "Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"
+
+my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"]
+print(my_friends)
+
+
+
+#            Use your my_friends list for the following:
+
+print out the length of the list
+
+my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"]
+print(len(my_friends))
+
+
+print out the 4th friend’s name
+
+my_friends = ["Rizzo", "French", "Danny", "Kenickie", "Marty", "Sandy", "Cha-Cha", "Patty", "Sonny", "Calhoun"]
+print(my_friends [4])
+
+
+print out the 11th friend’s name (What happens?)
+
+
+
+
+once you have run this once, comment out the above line
+
+print out the last friend’s name (Use negative indexing)
+
+print out the 5th - 8th friend’s names
+
+print out the last 5 names (Do not place a number in both start and stop)
+
+print out the first 3 names (Do not place a number in both start and stop)
+
+print out every other name, starting at the first name
+
+print out every third name, starting at the last name going backwards to the front of the list.
+
+change the 8th friend’s name to "Elizabeth". Print out the changed list.
+
+add a new friend, Danny, to the end of the list. Print out the changed list.
+
+remove the 7th friend’s name (They ate the last cookie in the jar). Print out the changed list.
+
+insert a new friend, Sandy, in the 3rd spot of the list. Print out the changed list.
+
+print out the number of times the name Sandy appears in the list.
+
+sort the list to be in alphabetical order. Print out the sorted list.
